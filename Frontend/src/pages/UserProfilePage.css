@@ -1,0 +1,393 @@
+/**
+ * UserProfilePage Styles - User Profile
+ */
+
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f0f4ff 0%, #e8ecf8 50%, #f5f7fa 100%);
+}
+
+.profile-main {
+  padding: 32px 24px 64px;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+.profile-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.profile-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.profile-header p {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+.profile-user-id {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.profile-user-id strong {
+  color: #4f6af5;
+}
+
+/* Save Message */
+.save-message {
+  background: #d1fae5;
+  color: #059669;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Balance Card */
+.balance-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f5;
+  margin-bottom: 20px;
+}
+
+.balance-card__main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.balance-card__info {
+  flex: 1;
+}
+
+.balance-card__label {
+  display: block;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.balance-card__value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.balance-card__input {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  border: 2px solid #4f6af5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  width: 180px;
+}
+
+.balance-card__input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 106, 245, 0.15);
+}
+
+.balance-card__edit {
+  padding: 8px 16px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.balance-card__edit:hover {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.balance-card__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-save {
+  padding: 8px 16px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background: #059669;
+}
+
+.btn-cancel {
+  padding: 8px 16px;
+  background: #f3f4f6;
+  color: #6b7280;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+/* Safe to Spend */
+.balance-card__safe {
+  background: linear-gradient(135deg, #d1fae5 0%, #ecfdf5 100%);
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.safe-label {
+  font-size: 14px;
+  color: #059669;
+  font-weight: 500;
+}
+
+.safe-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #059669;
+}
+
+.safe-note {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Section Card */
+.section-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f5;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* Obligations Grid */
+.obligations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.obligation-item {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.obligation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.obligation-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.obligation-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.obligation-input {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  border: 2px solid #4f6af5;
+  border-radius: 6px;
+  padding: 6px 10px;
+  width: 120px;
+}
+
+.obligation-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 106, 245, 0.15);
+}
+
+.obligation-days {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.days-input {
+  width: 60px;
+  padding: 4px 8px;
+  border: 2px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.days-input:focus {
+  outline: none;
+  border-color: #4f6af5;
+}
+
+/* Trust Grid */
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.trust-item {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.trust-label {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.trust-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.trust-value.trust-high {
+  color: #10b981;
+}
+
+.trust-value.trust-medium {
+  color: #f59e0b;
+}
+
+.trust-value.trust-low {
+  color: #ef4444;
+}
+
+.trust-value.trust-date {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Spending Grid */
+.spending-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.spending-item {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.spending-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spending-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.spending-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* CTA */
+.profile-cta {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.profile-btn {
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .profile-main {
+    padding: 24px 16px 64px;
+  }
+
+  .profile-header h1 {
+    font-size: 26px;
+  }
+
+  .balance-card__main {
+    flex-wrap: wrap;
+  }
+
+  .balance-card__value {
+    font-size: 28px;
+  }
+
+  .obligations-grid,
+  .spending-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .obligation-item,
+  .spending-item {
+    padding: 16px;
+  }
+}

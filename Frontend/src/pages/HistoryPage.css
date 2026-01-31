@@ -1,0 +1,327 @@
+/**
+ * HistoryPage Styles - Transaction History
+ */
+
+.history-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f0f4ff 0%, #e8ecf8 50%, #f5f7fa 100%);
+}
+
+.history-main {
+  padding: 40px 24px 64px;
+}
+
+.history-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header Icon */
+.history-icon {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #4f6af5 0%, #6366f1 100%);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 24px;
+  box-shadow: 0 8px 24px rgba(79, 106, 245, 0.25);
+}
+
+/* Title */
+.history-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.history-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+/* Stats */
+.history-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f5;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.stat-value--success {
+  color: #10b981;
+}
+
+.stat-value--warning {
+  color: #f59e0b;
+}
+
+.stat-value--danger {
+  color: #ef4444;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-tab:hover {
+  background: #f9fafb;
+  color: #374151;
+}
+
+.filter-tab--active {
+  background: #4f6af5;
+  border-color: #4f6af5;
+  color: white;
+}
+
+.filter-tab--active:hover {
+  background: #4338ca;
+}
+
+/* Transaction List */
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.transaction-item {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f5;
+  text-align: left;
+}
+
+.transaction-item__left {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+
+.transaction-item__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.transaction-item__icon.decision-allow {
+  background: #d1fae5;
+  color: #10b981;
+}
+
+.transaction-item__icon.decision-block {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.transaction-item__icon.decision-warn {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+
+.transaction-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.transaction-item__amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.transaction-item__date {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.transaction-item__reason {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.transaction-item__overridden {
+  font-size: 12px;
+  color: #f59e0b;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.transaction-item__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.transaction-badge {
+  display: inline-flex;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.transaction-badge.decision-allow {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.transaction-badge.decision-block {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.transaction-badge.decision-warn {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.transaction-item__category {
+  font-size: 12px;
+  color: #9ca3af;
+  text-transform: capitalize;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #f0f0f5;
+}
+
+.empty-state p {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Override Summary */
+.override-summary {
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: 12px;
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.override-summary h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #92400e;
+  margin-bottom: 4px;
+}
+
+.override-summary p {
+  font-size: 14px;
+  color: #78350f;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .history-main {
+    padding: 24px 16px 64px;
+  }
+
+  .history-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+  }
+
+  .history-title {
+    font-size: 26px;
+  }
+
+  .history-stats {
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .stat-item {
+    width: 45%;
+  }
+
+  .filter-tabs {
+    gap: 6px;
+  }
+
+  .filter-tab {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .transaction-item {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .transaction-item__right {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

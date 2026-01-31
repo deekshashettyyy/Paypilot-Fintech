@@ -1,0 +1,256 @@
+/**
+ * LandingPage Styles - Clean Fintech Design
+ */
+
+.landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: linear-gradient(180deg, #f0f4ff 0%, #e8ecf8 50%, #f5f7fa 100%);
+}
+
+.landing__content {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.landing__content--form {
+  max-width: 560px;
+}
+
+/* Hero */
+.landing__hero {
+  margin-bottom: 48px;
+}
+
+.landing__hero--compact {
+  margin-bottom: 32px;
+}
+
+.landing__logo {
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(135deg, #4f6af5 0%, #6366f1 100%);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 0 auto 24px;
+  box-shadow: 0 8px 24px rgba(79, 106, 245, 0.25);
+}
+
+.landing__title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+  letter-spacing: -0.03em;
+}
+
+.landing__tagline {
+  font-size: 20px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+/* Feature Cards */
+.landing__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f0f0f5;
+  text-align: center;
+}
+
+.feature-card__icon {
+  margin: 0 auto 16px;
+}
+
+.feature-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.feature-card__description {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* CTA */
+.landing__cta {
+  text-align: center;
+}
+
+.landing__btn {
+  padding: 16px 40px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+/* Setup Form */
+.setup-form {
+  width: 100%;
+}
+
+.setup-form__card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0f0f5;
+  text-align: left;
+}
+
+.setup-form__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.setup-form__subtitle {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.form-section__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.15s ease;
+  background: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4f6af5;
+  box-shadow: 0 0 0 3px rgba(79, 106, 245, 0.1);
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+.form-error {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #fee2e2;
+}
+
+.setup-form__submit {
+  width: 100%;
+  padding: 16px 24px;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .landing {
+    padding: 32px 16px;
+  }
+
+  .landing__title {
+    font-size: 40px;
+  }
+
+  .landing__tagline {
+    font-size: 18px;
+  }
+
+  .landing__features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card {
+    padding: 24px 20px;
+  }
+
+  .form-row,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing__logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+  }
+
+  .landing__title {
+    font-size: 32px;
+  }
+
+  .landing__tagline {
+    font-size: 16px;
+  }
+
+  .setup-form__card {
+    padding: 24px;
+  }
+}

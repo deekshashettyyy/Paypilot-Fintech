@@ -1,0 +1,252 @@
+/**
+ * DecisionCard Styles - Clean Payment Decision UI
+ */
+
+.decision-card {
+  background: white;
+  border-radius: 20px;
+  padding: 48px 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Loading State */
+.decision-card--loading {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decision-card__loader {
+  text-align: center;
+}
+
+.decision-card__loader .spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 16px;
+}
+
+.decision-card__loader p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Icon Wrapper */
+.decision-card__icon-wrapper {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.decision-card__icon-wrapper--allow {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #10b981;
+  border: 3px solid #10b981;
+}
+
+.decision-card__icon-wrapper--warn {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #f59e0b;
+  border: 3px solid #f59e0b;
+}
+
+.decision-card__icon-wrapper--block {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  color: #ef4444;
+  border: 3px solid #ef4444;
+}
+
+/* Title */
+.decision-card__title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.decision-card__title--allow {
+  color: #059669;
+}
+
+.decision-card__title--warn {
+  color: #d97706;
+}
+
+.decision-card__title--block {
+  color: #dc2626;
+}
+
+/* Amount */
+.decision-card__amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+/* Risk Score */
+.decision-card__risk-score {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.decision-card__risk-score--low {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.decision-card__risk-score--medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.decision-card__risk-score--high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Message */
+.decision-card__message {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.decision-card__message svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.decision-card__message--allow {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.decision-card__message--warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.decision-card__message--block {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Factors */
+.decision-card__factors {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.decision-card__factors--success {
+  display: none; /* Hide factors for success to keep it clean */
+}
+
+.decision-card__factors-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.decision-card__factor {
+  background: #f9fafb;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 6px;
+  border-left: 3px solid #9ca3af;
+}
+
+.decision-card--warn .decision-card__factor {
+  border-left-color: #f59e0b;
+}
+
+.decision-card--block .decision-card__factor {
+  border-left-color: #ef4444;
+}
+
+/* Actions */
+.decision-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.decision-card__btn {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.btn-warning {
+  background: #f59e0b;
+  color: white;
+}
+
+.btn-warning:hover {
+  background: #d97706;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+/* Warning Note */
+.decision-card__warning-note {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .decision-card {
+    padding: 32px 24px;
+    border-radius: 16px;
+  }
+
+  .decision-card__icon-wrapper {
+    width: 72px;
+    height: 72px;
+  }
+
+  .decision-card__title {
+    font-size: 22px;
+  }
+
+  .decision-card__amount {
+    font-size: 28px;
+  }
+
+  .decision-card__message {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+}
