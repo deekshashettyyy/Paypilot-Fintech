@@ -49,8 +49,8 @@ User → Frontend → Backend → n8n (Policy Engine) → Gemini AI
 
 | Layer | Responsibility |
 |-----|----------------|
-| Frontend | Collect user context, show risk, history, AI explanations |
-| Backend (Express) | Risk calculation, trust tracking, DB persistence |
+| Frontend (React.js) | Collect user context, show risk, history, AI explanations |
+| Backend (Express.js) | Risk calculation, trust tracking, DB persistence |
 | n8n | Policy & threshold management (ALLOW / WARN / BLOCK) |
 | Gemini | Human-friendly explanation (never decision making) |
 | MongoDB | User profile, overrides, trust score |
