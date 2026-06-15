@@ -23,6 +23,22 @@ The system is designed with clear separation:
 
 ---
 
+## Tech Stack
+
+- Frontend: React.js, Vite
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Workflow Automation: n8n
+- AI: Gemini API
+
+---
+
+## 🎥 Demo
+
+[Watch Demo Video](your-link)
+
+---
+
 ## 🔍 What PayPilot Does
 
 When a user initiates a transaction, PayPilot:
@@ -44,6 +60,18 @@ User → Frontend → Backend → n8n (Policy Engine) → Gemini AI
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Risk Assessment
+![Risk](./screenshots/risk.png)
+
+### Transaction Decision
+![Decision](./screenshots/decision.png)
+
+---
 
 ### Roles
 
@@ -59,24 +87,24 @@ User → Frontend → Backend → n8n (Policy Engine) → Gemini AI
 
 ## 📁 Repository Structure
 
+```text
 paypilot/
 ├── Backend/
-│ ├── src/
-│ │ ├── routes/
-│ │ ├── services/
-│ │ ├── models/
-│ │ └── server.js
-│ ├── package.json
-│ └── package-lock.json
+│   ├── src/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── models/
+│   │   └── server.js
+│   ├── package.json
+│   └── package-lock.json
 │
 ├── Frontend/
-│ ├── src/
-│ ├── package.json
-│ └── vite.config.js
+│   ├── src/
+│   ├── package.json
+│   └── vite.config.js
 │
 └── README.md
-
-
+```
 ---
 
 ## ⚙️ Risk Evaluation Model
@@ -207,29 +235,18 @@ PayPilot can be:
 - Configurable risk rules without redeploying backend code  
 
 ---
----
 
-## 🤝 Team & Collaboration
+## 🚧 Challenges & Learnings
 
-This project was built collaboratively with a strong focus on:
-- Clear system design
-- Responsible AI usage
-- Real-world fintech constraints
-
-All core decisions — risk logic, policy separation, and AI explainability — were discussed and implemented as a team.
-We followed clean version control practices using Git and GitHub, with separate branches for frontend and backend development.
-
----
-
-## 🙌 Acknowledgements
-
-Thanks to our mentors and the GDG community for guidance, feedback, and the opportunity to explore preventive fintech systems.
+- Designing a transparent risk scoring system instead of relying solely on AI.
+- Managing trust scores and override behavior without compromising user autonomy.
+- Integrating workflow automation through n8n while maintaining explainability.
 
 ---
 
 ## 👋 Closing Note
 
-PayPilot is not just a hackathon prototype — it represents a shift toward **pre-emptive, responsible financial systems** where technology enforces discipline without removing user autonomy.
+PayPilot represents a shift toward **pre-emptive, responsible financial systems** where technology enforces discipline without removing user autonomy.
 
 **Built with purpose. Designed for trust.**
 
