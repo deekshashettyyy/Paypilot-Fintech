@@ -35,7 +35,7 @@ The system is designed with clear separation:
 
 ## 🎥 Demo
 
-[Watch Demo Video](your-link)
+[Watch Demo Video](https://drive.google.com/file/d/1xMOUY367Xo8CHyfwpfQDIdcgi_reaP3y/view?usp=sharing)
 
 ---
 
@@ -63,13 +63,13 @@ User → Frontend → Backend → n8n (Policy Engine) → Gemini AI
 ## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./UI_Screenshots/Dashboard.png)
 
-### Risk Assessment
-![Risk](./screenshots/risk.png)
+### N8N
+![N8N](./UI_Screenshots/N8N.png)
 
-### Transaction Decision
-![Decision](./screenshots/decision.png)
+### Transaction Decision - Payment Blocked
+![Decision](./UI_Screenshots/paymentBlocked.png)
 
 ---
 
