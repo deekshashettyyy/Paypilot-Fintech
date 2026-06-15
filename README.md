@@ -69,7 +69,7 @@ User → Frontend → Backend → n8n (Policy Engine) → Gemini AI
 ![N8N](./UI_Screenshots/N8N.png)
 
 ### Transaction Decision - Payment Blocked
-![Decision](./UI_Screenshots/paymentBlocked.png)
+![Decision](./UI_Screenshots/PaymentBlocked.png)
 
 ---
 
