@@ -59,7 +59,7 @@ export default function DecisionCard({
         </div>
         
         <h2 className="decision-card__title decision-card__title--allow">Payment Approved</h2>
-        <p className="decision-card__amount">${amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
+        <p className="decision-card__amount">₹{amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
         
         {/* Risk Score */}
         {riskScore !== undefined && (
@@ -102,7 +102,7 @@ export default function DecisionCard({
         </div>
         
         <h2 className="decision-card__title decision-card__title--warn">Payment Warning</h2>
-        <p className="decision-card__amount">${amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
+        <p className="decision-card__amount">₹{amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
         
         {/* Risk Score */}
         {riskScore !== undefined && (
@@ -160,7 +160,7 @@ export default function DecisionCard({
         </div>
         
         <h2 className="decision-card__title decision-card__title--block">Payment Blocked</h2>
-        <p className="decision-card__amount">${amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
+        <p className="decision-card__amount">₹{amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>
         
         {/* Risk Score */}
         {riskScore !== undefined && (

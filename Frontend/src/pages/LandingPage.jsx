@@ -187,7 +187,7 @@ export default function LandingPage() {
 
             {/* Balance */}
             <div className="form-group">
-              <label className="form-label" htmlFor="balance">Current Balance ($)</label>
+              <label className="form-label" htmlFor="balance">Current Balance (₹)</label>
               <input
                 type="number"
                 id="balance"
@@ -205,7 +205,7 @@ export default function LandingPage() {
             {/* Rent and EMI Row */}
             <div className="form-row">
               <div className="form-group">
-                <label className="form-label" htmlFor="rentAmount">Rent Due ($)</label>
+                <label className="form-label" htmlFor="rentAmount">Rent Due (₹)</label>
                 <input
                   type="number"
                   id="rentAmount"
@@ -219,7 +219,7 @@ export default function LandingPage() {
                 />
               </div>
               <div className="form-group">
-                <label className="form-label" htmlFor="monthlyEMIs">EMI Amount ($)</label>
+                <label className="form-label" htmlFor="monthlyEMIs">EMI Amount (₹)</label>
                 <input
                   type="number"
                   id="monthlyEMIs"
@@ -255,7 +255,7 @@ export default function LandingPage() {
               <h3 className="form-section__title">Recent Spending (Optional)</h3>
               <div className="form-grid">
                 <div className="form-group">
-                  <label className="form-label" htmlFor="foodSpending">Food ($)</label>
+                  <label className="form-label" htmlFor="foodSpending">Food (₹)</label>
                   <input
                     type="number"
                     id="foodSpending"
@@ -268,7 +268,7 @@ export default function LandingPage() {
                   />
                 </div>
                 <div className="form-group">
-                  <label className="form-label" htmlFor="shoppingSpending">Shopping ($)</label>
+                  <label className="form-label" htmlFor="shoppingSpending">Shopping (₹)</label>
                   <input
                     type="number"
                     id="shoppingSpending"
@@ -281,7 +281,7 @@ export default function LandingPage() {
                   />
                 </div>
                 <div className="form-group">
-                  <label className="form-label" htmlFor="utilitiesSpending">Utilities ($)</label>
+                  <label className="form-label" htmlFor="utilitiesSpending">Utilities (₹)</label>
                   <input
                     type="number"
                     id="utilitiesSpending"
@@ -294,7 +294,7 @@ export default function LandingPage() {
                   />
                 </div>
                 <div className="form-group">
-                  <label className="form-label" htmlFor="entertainmentSpending">Entertainment ($)</label>
+                  <label className="form-label" htmlFor="entertainmentSpending">Entertainment (₹)</label>
                   <input
                     type="number"
                     id="entertainmentSpending"

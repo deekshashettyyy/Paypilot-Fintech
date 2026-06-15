@@ -96,7 +96,7 @@ export default function HistoryPage() {
           {/* Summary Stats */}
           <div className="history-stats">
             <div className="stat-item">
-              <span className="stat-value">${stats.total.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
+              <span className="stat-value">₹{stats.total.toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>
               <span className="stat-label">Total Spent</span>
             </div>
             <div className="stat-item">
@@ -165,7 +165,7 @@ export default function HistoryPage() {
                     </div>
                     <div className="transaction-item__info">
                       <span className="transaction-item__amount">
-                        ${transaction.amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}
+                        ₹{transaction.amount?.toLocaleString('en-US', { minimumFractionDigits: 2 })}
                       </span>
                       <span className="transaction-item__date">
                         {formatDate(transaction.date)}
